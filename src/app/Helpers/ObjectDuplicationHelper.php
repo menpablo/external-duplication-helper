@@ -1,6 +1,6 @@
 <?php
 
-namespace Helpers;
+namespace FlowInt\ExternalIdDuplicationHelper\Helpers;
 
 use FlowInt\ExternalIdDuplicationHelper\Exceptions\ObjectAlreadyExistsException;
 use FlowInt\ExternalIdDuplicationHelper\Models\ExternalIdAux;
