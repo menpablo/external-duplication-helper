@@ -11,9 +11,9 @@ class ObjectDuplicationHelper
 {
     static function saveNewObject($objectId,$objectType,$integrationSystem) {
         $externalIdAux = new ExternalIdAux([
-                                            'objectId' => $objectId,
-                                            'objectType' => $objectType,
-                                            'integrationSystem' => $integrationSystem
+                                            'external_id' => $objectId,
+                                            'object_type' => $objectType,
+                                            'integration_system_id' => $integrationSystem
                                            ]);
         try{
             $externalIdAux->save();
