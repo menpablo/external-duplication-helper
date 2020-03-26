@@ -18,7 +18,6 @@ class ObjectDuplicationHelper
         try{
             $externalIdAux->save();
         }catch (QueryException $e){
-            echo $e->getCode();
             if($e->errorInfo[1] == 1062){
                 throw new ObjectAlreadyExistsException($externalIdAux->external_id,$externalIdAux->object_type);
             }
