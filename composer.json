@@ -1,0 +1,24 @@
+{
+    "name": "flowint/external-id-duplication-helper",
+    "description": "Prevents object duplications",
+    "type": "library",
+    "authors": [
+        {
+            "name": "pablo",
+            "email": "pablo@flow-int.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "FlowInt\\ExternalIdDuplicationHelper\\": "packages/external-duplication-helper/src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "FlowInt\\ExternalIdDuplicationHelper\\Providers\\ExternalIdDuplicationServiceProvider"
+            ]
+        }
+    }
+}
