@@ -13,7 +13,10 @@
     "autoload": {
         "psr-4": {
             "FlowInt\\ExternalIdDuplicationHelper\\": "src/"
-        }
+        },
+        "classmap": [
+            "src/*"
+        ]
     },
     "extra": {
         "laravel": {
