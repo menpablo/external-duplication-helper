@@ -1,6 +1,6 @@
 <?php
 
-namespace FlowInt\ExternalIdDuplicationHelper\Providers;
+namespace FlowInt\ExternalIdDuplicationHelper;
 
 use Illuminate\Support\ServiceProvider;
 
