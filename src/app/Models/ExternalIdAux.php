@@ -1,6 +1,7 @@
 <?php
 
 namespace FlowInt\ExternalIdDuplicationHelper\App\Models;
+use Illuminate\Database\Eloquent\Model;
 
 
 class ExternalIdAux extends Model
