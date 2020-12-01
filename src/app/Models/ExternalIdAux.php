@@ -1,6 +1,6 @@
 <?php
 
-namespace FlowInt\ExternalIdDuplicationHelper\Models;
+namespace FlowInt\ExternalIdDuplicationHelper\App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 

@@ -6,7 +6,7 @@
  * Time: 12:00
  */
 
-namespace  FlowInt\ExternalIdDuplicationHelper\Exceptions;
+namespace  FlowInt\ExternalIdDuplicationHelper\App\Exceptions;
 
 use Exception;
 use Throwable;
