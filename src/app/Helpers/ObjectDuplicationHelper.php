@@ -2,8 +2,8 @@
 
 namespace FlowInt\ExternalIdDuplicationHelper\App\Helpers;
 
-use FlowInt\ExternalIdDuplicationHelper\Exceptions\ObjectAlreadyExistsException;
-use FlowInt\ExternalIdDuplicationHelper\Models\ExternalIdAux;
+use FlowInt\ExternalIdDuplicationHelper\App\Exceptions\ObjectAlreadyExistsException;
+use FlowInt\ExternalIdDuplicationHelper\App\Models\ExternalIdAux;
 use Illuminate\Database\QueryException;
 use Illuminate\Support\Facades\Request;
 
