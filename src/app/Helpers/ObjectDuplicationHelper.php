@@ -24,4 +24,17 @@ class ObjectDuplicationHelper
             throw $e;
         }
     }
+    
+     static function deleteObject($objectId,$objectType,$integrationSystem) {
+        try{
+            $externalIdAux = ExternalIdAux::where('external_id', $objectId)
+                ->where('object_type', $objectType)
+                ->where('integration_system_id', $integrationSystem)->delete();
+        }catch (QueryException $e){
+            if($e->errorInfo[1] == 1062){
+                throw new ObjectAlreadyExistsException($objectId,$objectType);
+            }
+            throw $e;
+        }
+    }
 }
